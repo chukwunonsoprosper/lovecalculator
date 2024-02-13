@@ -1,0 +1,146 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: lightgrey;
+}
+
+
+
+.lovecalculator {
+    width: 550px;
+    padding: 5px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+}
+
+.heading {
+    width: 95%;
+    margin: auto;
+    margin-top: 2%;
+    padding: 0px 5px;
+    border-radius: 5px;
+    background-color: white;
+    color: red;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+}
+
+.side1 p {
+    background-color: red;
+    color: white;
+    padding: 8px 8px;
+    border-radius: 5px;
+    text-transform: capitalize;
+}
+
+.menu .side p{
+    color: red;
+    padding: 8px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px){
+    .lovecalculator {
+        width: 95%;
+    }
+}
+
+.animyresult{
+    width: 70px;
+    height: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.result {
+    margin-top: 100px;
+}
+
+.form {
+    width: 100%;
+}
+
+.form label {
+    color: red;
+    font-size: small;
+}
+
+.form .inputs {
+    padding: 20px;
+}
+
+.form .inputs input {
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    margin: 20px auto;
+    padding: 15px 8px;
+    border: 5px;
+    outline: none;
+    border: 1px solid #141414;
+}
+
+.form .inputs button {
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    color: white;
+    margin: 20px auto;
+    background-color: rgba(255, 0, 0, 0.322);
+    padding: 15px 8px;
+    border: 5px;
+    outline: none;
+}
+
+.form .inputs button:hover{
+    background-color: red;
+    transition: 0.5s ease-in-out;
+}
+
+
+.form .inputs input:focus{
+    border: 1px solid red;
+    transition: 0.5s ease-in-out;
+}
+
+.resultima {
+    width: 90px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+}
+
+.resultima img {
+    width: 100%;
+    height: auto;
+}
+
+#devlo {
+    position: absolute;
+    right: 25px;
+    display: none;
+    padding: 5px;
+    background-color: lightgray;
+    transition: 0.5s ease-in;
+}
+
+#devlo a {
+    font-weight: normal;
+    display: block;
+    margin: 15px;
+    text-decoration: none;
+    color: rgba(255, 0, 0, 0.904);
+    font-weight: 400;
+    text-align: center;
+}
+
+
