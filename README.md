@@ -1,1 +1,3 @@
-# lovecalculator
+a simple valentine project that returns the percentage of love between two people...
+
+result might not be accurate, but fun 😊
