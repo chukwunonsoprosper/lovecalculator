@@ -3,10 +3,34 @@
     font-family: sans-serif;
 }
 
-body {
-    background-color: lightgrey;
+button, a, img, p{
+    cursor: pointer;
 }
 
+body {
+    background-color: lightgrey;
+    transition: 0.5s ease-in-out;
+}
+
+.valresult .resultima{
+    padding: 10px;
+}
+
+.online {
+    position: absolute;
+    bottom: 15px;
+    left: 11.3px;
+    transition: 0.9s ease-in-out;
+}
+
+.online .mbox img {
+    background-color: white;
+    color: black;
+    color: rgb(4, 163, 4);
+    font-weight: bolder;
+    transition: 0.5s ease-in-out;
+    border-radius: 5px;
+}
 
 
 .lovecalculator {
@@ -54,16 +78,9 @@ body {
     }
 }
 
-.animyresult{
-    width: 70px;
-    height: 5px;
-    display: flex;
-    justify-content: center;
-}
 
-.result {
-    margin-top: 100px;
-}
+
+
 
 .form {
     width: 100%;
@@ -83,7 +100,7 @@ body {
     width: 100%;
     border-radius: 5px;
     margin: 20px auto;
-    padding: 15px 8px;
+    padding: 20px 8px;
     border: 5px;
     outline: none;
     border: 1px solid #141414;
@@ -96,7 +113,7 @@ body {
     color: white;
     margin: 20px auto;
     background-color: rgba(255, 0, 0, 0.322);
-    padding: 15px 8px;
+    padding: 20px 8px;
     border: 5px;
     outline: none;
 }
@@ -113,8 +130,8 @@ body {
 }
 
 .resultima {
-    width: 90px;
-    height: 90px;
+    width: 160px;
+    height: 160px;
     display: flex;
     justify-content: center;
 }
@@ -126,21 +143,36 @@ body {
 
 #devlo {
     position: absolute;
-    right: 25px;
+    right: 20px;
     display: none;
     padding: 5px;
-    background-color: lightgray;
+    background-color: white;
     transition: 0.5s ease-in;
 }
 
 #devlo a {
     font-weight: normal;
     display: block;
-    margin: 15px;
+    margin: 5px;
     text-decoration: none;
-    color: rgba(255, 0, 0, 0.904);
+    color: #141414;
     font-weight: 400;
+    background-color: lightgray;
     text-align: center;
+    padding: 8px 5px;
+    font-size: 13px;
+    padding: 15px 35px;
+    border-radius: 5px;
+}
+
+#rsa {
+    display: none;
+}
+
+#percent {
+    padding: 8px 8px;
+    background-color: red;
+    color: white;
 }
 
 

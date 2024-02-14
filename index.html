@@ -1,55 +1,87 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Valentine love calculator ❤️⚡</title>
+    <title>Valentine love calculator</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='main.js'></script>
 </head>
-<body>
+
+<body onload="checkNet()">
     <div class="container">
-        <div class="lovecalculator">
+        <div id="lova" class="lovecalculator">
             <div class="heading">
                 <div class="side1">
-                    <p onclick="opendiv()">valentine love calculator</p>
+                    <p id="aitype" onclick="opendiv()"></p>
+                    <script>
+                        const textToType = `Valentine love calculator`;
+                        const typingSpeed = 60;
+
+                        function typeText() {
+                            const typingDiv = document.getElementById('aitype');
+                            let index = 0;
+
+                            function type() {
+                                typingDiv.textContent += textToType[index];
+                                index++;
+
+                                if (index < textToType.length) {
+                                    setTimeout(type, typingSpeed);
+                                }
+                            }
+
+                            type();
+                        }
+                        typeText();
+                    </script>
                 </div>
                 <div class="menu">
                     <div onclick="opendiv()" class="side">
                         <p>&#9776;</p>
                         <div id="devlo" class="showmenu">
                             <a href="https://www.facebook.com/chukwunonsoprosper.wtf">Contact developer</a>
-                            <hr>
-                            <a href="https://wa.link/zf0v0u">Report bug</a>
-                            <hr>
+
                             <a href="https://www.facebook.com/chukwunonsoprosper.wtf">Support</a>
+
+                            <a href="javascript:void(0)" onclick="alert('This is a project created to calculate the love percentage between two individuals \n\nit may provide inacurrate result base on it algorithm... \n\ndo not fret...🤞')">About</a>
+
+                            <a style="color: red;" href="https://www.facebook.com/chukwunonsoprosper.wtf">Report bug</a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="form">
                 <div class="inputs">
-                    <label for="personName">Your name</label>
+                    <label for="personName">Your name:</label>
                     <input type="text" id="personName" placeholder="Your name">
-                    <label for="patnerName">Partner name</label>
+                    <label for="patnerName">Partner name:</label>
                     <input type="text" id="patnerName" placeholder="Your partner name">
                     <button onclick="calculateLove()">calculate love</button>
                     <p style="color: red; text-align: center;" id="err"></p>
                     <div class="valresult">
                         <center>
-                            <div class="resultima">
+                            <div class="resultima" id="rsa"">
                                 <img src="" alt="" id="resultimage">
                             </div>
                             <small style="text-align: center;" id="parares"></small>
                         </center>
                     </div>
                 </div>
-                
+
             </div>
         </div>
 
-    
+
+    </div>
+
+    <div class="online" id="checknet" onclick="chage()">
+        <div class="mbox" onclick="chage()">
+            <img src="eye-slash.svg" id="netstatue" style="width: 70px; height: 70px; padding: 5px 15px;"  onclick="chage()" alt="">
+        </div>
     </div>
 </body>
+
 </html>
